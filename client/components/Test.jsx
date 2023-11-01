@@ -18,7 +18,7 @@ export function DetailsRecord() {
 
     useEffect(() => {
         axios
-            .get(`http://localhost:5555/books/${id.slug}`)
+            .get(`https://balance-record.vercel.app/books/${id.slug}`)
             .then((res) => {
                 setBook(res.data);
             })
@@ -29,7 +29,7 @@ export function DetailsRecord() {
 
     const handleDeleteBook = () => {
         axios
-            .delete(`http://localhost:5555/books/${id.slug}`)
+            .delete(`https://balance-record.vercel.app/books/${id.slug}`)
             .then(() => {
                 alert("Successfully Deleted")
             })

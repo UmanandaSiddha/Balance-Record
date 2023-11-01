@@ -18,7 +18,7 @@ const Dashboard = () => {
 
     useEffect(() => {
         axios
-            .get("http://localhost:5555/books/")
+            .get("https://balance-record.vercel.app/books/")
             .then((res) => {
                 setInfo(res.data.data)
                 setInitial(res.data.inital)

@@ -18,7 +18,7 @@ const CreateTransaction = () => {
             desc,
         };
         axios
-            .post("http://localhost:5555/books/", data)
+            .post("https://balance-record.vercel.app/books/", data)
             .then(() => {
                 alert("Success")
             })
